@@ -3,4 +3,5 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    cursor: url("./img/cursor.png") 0 60,auto;
 }
