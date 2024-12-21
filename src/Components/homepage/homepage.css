@@ -1,0 +1,10 @@
+*{
+    background-color: black;
+}
+
+.main-video{
+    background-color: black;
+    opacity: 50%;
+    width: 100%;
+    height: auto;
+}

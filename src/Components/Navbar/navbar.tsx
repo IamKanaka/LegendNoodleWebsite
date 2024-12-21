@@ -1,7 +1,9 @@
+import { Outlet } from "react-router";
 import "./navbar.css";
 
 function Navbar(){
     return (
+        <>
         <div className="bg">
             
             <div className="left-menu">
@@ -10,12 +12,14 @@ function Navbar(){
                 <button className="btn">Credit</button>
                 <button className="btn">Media</button>
             </div>
-            <img className="logo" src="https://img.itch.zone/aW1nLzE4NDE2MjQ5LnBuZw==/315x250%23c/zRo0lB.png" alt="logo" />
+            <img className="logo" src="/src/img/logo.png" alt="logo" />
             <div className="right-menu">
                 
             <button className="btn">Download</button>
             </div>
         </div>
+        <Outlet />
+        </>
     );
 }
 

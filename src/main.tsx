@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import Navbar from './Components/Navbar/navbar';
 import "./index.css";
+import Homepage from './Components/homepage/homepage';
 
 const router = createBrowserRouter([{
   path: "",
@@ -10,7 +11,7 @@ const router = createBrowserRouter([{
   children: [
     {
       path: "",
-      element: <Navbar />
+      element: <Homepage />
     }
   ]
 }]);
