@@ -5,17 +5,18 @@ function Navbar(){
     return (
         <>
         <div className="bg">
-            
             <div className="left-menu">
-                
-                <button className="btn">Tutorial</button>
-                <button className="btn">Credit</button>
-                <button className="btn">Media</button>
-            </div>
             <img className="logo" src="/src/img/logo.png" alt="logo" />
+            <div className="block-menu">
+                
+                <button className="btn">Game</button>
+                <button className="btn">Guide</button>
+                <button className="btn">Team</button>
+            </div>
+            </div>
             <div className="right-menu">
                 
-            <button className="btn">Download</button>
+            <button className="download">Download</button>
             </div>
         </div>
         <Outlet />

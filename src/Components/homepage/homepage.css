@@ -3,8 +3,12 @@
 }
 
 .main-video{
+    position: inherit;
+    top: 0px;
+    left: 0px;
     background-color: black;
     opacity: 50%;
     width: 100%;
-    height: auto;
+    height: 90vh;
+    object-fit: cover;
 }

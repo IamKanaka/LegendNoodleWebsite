@@ -8,11 +8,17 @@
     align-items: center;
 }
 
-.left-menu{
+.block-menu{
     height: 64px;
     display: flex;
     justify-content: start;
     align-items: center;
+}
+.left-menu{
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .right-menu{
     height: 64px;
@@ -36,6 +42,25 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+.download{
+    width: fit-content;
+    height: 100%;
+    padding: 16px 32px;
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    border: 0px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+
+
+.download:hover{
+    transition: 0.5s;
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+    transform: scaleX(1.2);
+}
 .btn{
     width: fit-content;
     height: 100%;
@@ -50,13 +75,13 @@
 
 .btn:hover{
     transition: 0.5s;
-    color: black;
+    color: rgb(255, 0, 0);
     background-color: blanchedalmond;
     transform: scaleX(1.2);
     margin: 8px;
 }
 
-.left-menu:hover :not(.btn:hover){
+.block-menu:hover :not(.btn:hover){
     opacity: 0.4;
 }
 
