@@ -1,3 +1,7 @@
+*{
+    opacity: 100%;
+}
+
 .Teambg{
     width: 100%;
     height: 90vh;
@@ -10,12 +14,17 @@
 
 .contentblock{
     width: 90%;
+    height: fit-content;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-
+.contentblock:hover{
+    .DevParent:not(:hover){
+        opacity: 0.4;
+    }
+}
 
 
 .DevParent{
@@ -82,6 +91,7 @@
     transition: 0.5s;
     scale: 1.1;
     .DevBlock{
+        opacity: 1;
         background-color: white;
         transition: 0.5s;
         box-shadow:
@@ -89,20 +99,27 @@
             -10px 0 80px rgb(255, 0, 0),
             10px 0 80px #0ff;
         .profile_img{
+            opacity: 1;
             transition: 0.5s;
             transform: translateY(0px); 
         }
         h4{
+            opacity: 1;
             transition: 0.5s;
             transform: translateY(0px);
         }
         h5{
+            opacity: 1;
             transition: 0.5s;
             transform: translateY(0px);
         }
     }
     .SocialMedia{
+        opacity: 1;
         width: 100%;
+        a img{
+            opacity: 1;
+        }
     }
 }
 
