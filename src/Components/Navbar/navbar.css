@@ -28,10 +28,10 @@
 }
 
 .logo{
-    height: 48px;
+    height: 64px;
     width: auto;
     object-fit: contain;
-    margin: 16px;
+    margin: 64px;
     transition: 0.5s;
     box-shadow: none;
 }
@@ -52,6 +52,16 @@
     font-size: 1.5rem;
     font-weight: bolder;
     transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 24px;
+        height: 24px;
+        margin: 4px;
+        transition: 0.5s;
+        background-color: rgb(255, 0, 0);
+    }
 }
 
 
@@ -60,6 +70,11 @@
     color: rgb(255, 0, 0);
     background-color: rgb(255, 255, 255);
     transform: scaleX(1.2);
+    img{
+        transition: 0.5s;
+        background-color: rgb(0, 0, 0);
+        border: rgb(255, 0, 0) solid 5px;
+    }
 }
 .btn{
     width: fit-content;
@@ -71,6 +86,17 @@
     font-size: 1rem;
     font-weight: bold;
     transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        width: 24px;
+        height: 24px;
+        margin: 4px;
+        transition: 0.5s;
+        color: white;
+    }
 }
 
 .btn:hover{
@@ -79,7 +105,14 @@
     background-color: blanchedalmond;
     transform: scaleX(1.2);
     margin: 8px;
+
+    img{
+        transition: 0.5s;
+        background-color: blanchedalmond;
+        border: black solid 5px;
+    }
 }
+
 
 .block-menu:hover :not(.btn:hover){
     opacity: 0.4;
