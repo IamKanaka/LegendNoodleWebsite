@@ -9,19 +9,19 @@
 }
 
 .block-menu{
-    height: 64px;
+    height: 100%;
     display: flex;
     justify-content: start;
     align-items: center;
 }
 .left-menu{
-    height: 64px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .right-menu{
-    height: 64px;
+    height: 100%;
     display: flex;
     justify-content: end;
     align-items: center;

@@ -34,7 +34,7 @@ function Devteam(){
         {
             facebook_link:"https://www.facebook.com/tsurugi.kyousuke.9231",
             ig_link:"https://www.instagram.com/kawfang.w/",
-            name: "Wiratchadaporn Chuethong",
+            name: "Wiratchadaporn Chueathong",
             role: "2D Artist",
             picture_path: "/src/img/profile/wiratchadaporn.jpg"
         }
@@ -61,7 +61,7 @@ function DevCard(devser:descDev){
         <div className="DevParent">
             <div className="DevBlock">
                 <img className="profile_img" src={devser.picture_path} alt="profile" />
-                <h4>{devser.name}</h4>
+                <h4 title={devser.name}>{devser.name}</h4>
                 <h5>{devser.role}</h5>
             </div>
             
