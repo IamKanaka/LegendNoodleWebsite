@@ -10,9 +10,16 @@ function Navbar(){
             <img className="logo" src="/src/img/logo.png" alt="logo" onClick={()=> nav('')} />
             <div className="block-menu">
                 
-                <button className="btn">Game Info</button>
+                <div className="DropDown">
+                    <div className="btn">Game Info<img src="/src/img/icon/dropdown.svg" alt="dropdown" /></div>
+                    <div className="ContentDropDown">
+                        <button className="dropbtn">Character</button>
+                        <button className="dropbtn">Character</button>
+                        <button className="dropbtn">Character</button>
+                    </div>
+                </div>
                 <button className="btn">Tutorial</button>
-                <button className="btn" onClick={()=> nav('/Team')}>Devloper Team <img src="/src/img/icon/dropdown.svg" alt="dropdown" /></button>
+                <button className="btn" onClick={()=> nav('/Team')}>Devloper Team</button>
             </div>
             </div>
             <div className="right-menu">

@@ -75,11 +75,81 @@
         border: rgb(255, 0, 0) solid 5px;
     }
 }
+
+.DropDown{
+    transition: 0.5s;
+    width: fit-content;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+    .ContentDropDown{
+        transition: 0.3s;
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        width: 100%;
+        height: fit-content;
+        .dropbtn{
+            transition: 0.5s;
+            transform: translateY(-100px);
+        }
+    }
+}
+
+.DropDown:hover{
+    height: fit-content;
+    transition: 0.5s;
+    .ContentDropDown{
+        transition: 2s;
+        z-index: 1;
+        opacity: 1;
+        .dropbtn{
+            transition: 0.5s;
+            transform: translateY(0px);
+        }
+    }
+
+    .btn{
+        transition: 0.5s;
+        color: rgb(255, 0, 0);
+        background-color: blanchedalmond;
+        transform: scaleX(1.2);
+        margin: 0px 8px 0px 8px;
+
+        
+    }
+}
+.dropbtn{
+    width: 100%;
+    height: 100%;
+    padding: 16px 32px;
+    color: rgb(255, 0, 0);
+    background-color: blanchedalmond;
+    border: 0px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+
+.dropbtn:hover{
+    transition: 0.5s;
+    color: rgb(255, 0, 0);
+    background-color: blanchedalmond;
+    scale: 1.2;
+}
+
+
 .btn{
     width: fit-content;
     height: 100%;
     padding: 16px 32px;
-    background-color: rgba(0, 0, 0, 0);;
+    background-color: rgba(0, 0, 0, 0);
     border: 0px;
     color: white;
     font-size: 1rem;
@@ -110,6 +180,7 @@
         background-color: blanchedalmond;
         border: black solid 5px;
     }
+
 }
 
 

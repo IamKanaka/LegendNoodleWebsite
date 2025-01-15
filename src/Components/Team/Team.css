@@ -33,8 +33,7 @@ body{
 
 
 .DevParent{
-    flex-grow: 1;
-    flex-basis: 260px;
+    flex-basis: 300px;
     transition: 0.5s;
     width: 20%;
     height: fit-content;
